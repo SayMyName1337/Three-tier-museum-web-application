@@ -1,0 +1,10 @@
+<fontFamilies>
+    <fontFamily name="DejaVu Sans">
+        <normal><![CDATA[DejaVuSans.ttf]]></normal>
+        <bold><![CDATA[DejaVuSans-Bold.ttf]]></bold>
+        <italic><![CDATA[DejaVuSans-Oblique.ttf]]></italic>
+        <boldItalic><![CDATA[DejaVuSans-BoldOblique.ttf]]></boldItalic>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+    </fontFamily>
+</fontFamilies>

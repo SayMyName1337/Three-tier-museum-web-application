@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExhibitionReport" pageWidth="842" pageHeight="595" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8e5e9a3-e8a6-4f3e-9f8e-5bafdaf0c7a3">
+    <parameter name="ReportTitle" class="java.lang.String"/>
+    <parameter name="CurrentDate" class="java.util.Date"/>
+    <parameter name="LogoPath" class="java.lang.String"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="id" class="java.lang.Integer"/>
+    <field name="name" class="java.lang.String"/>
+    <field name="description" class="java.lang.String"/>
+    <field name="started" class="java.sql.Date"/>
+    <field name="ended" class="java.sql.Date"/>
+    <field name="museumId" class="java.lang.Integer"/>
+    <title>
+        <band height="60">
+            <image>
+                <reportElement x="0" y="0" width="50" height="50"/>
+                <imageExpression><![CDATA[$P{LogoPath}]]></imageExpression>
+            </image>
+            <textField>
+                <reportElement x="60" y="0" width="742" height="50"/>
+                <textElement textAlignment="Center">
+                    <font size="18" isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{ReportTitle}]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="30">
+            <rectangle>
+                <reportElement x="0" y="0" width="802" height="30" backcolor="#CCCCCC" mode="Opaque"/>
+            </rectangle>
+            <staticText>
+                <reportElement x="0" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[ID]]></text>
+            </staticText>
+            <line>
+                <reportElement x="100" y="0" width="1" height="30"/>
+            </line>
+            <staticText>
+                <reportElement x="101" y="0" width="150" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <line>
+                <reportElement x="251" y="0" width="1" height="30"/>
+            </line>
+            <staticText>
+                <reportElement x="252" y="0" width="200" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[Description]]></text>
+            </staticText>
+            <line>
+                <reportElement x="452" y="0" width="1" height="30"/>
+            </line>
+            <staticText>
+                <reportElement x="453" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[Started]]></text>
+            </staticText>
+            <line>
+                <reportElement x="553" y="0" width="1" height="30"/>
+            </line>
+            <staticText>
+                <reportElement x="554" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[Ended]]></text>
+            </staticText>
+            <line>
+                <reportElement x="654" y="0" width="1" height="30"/>
+            </line>
+            <staticText>
+                <reportElement x="655" y="0" width="147" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true" fontName="DejaVu Sans" pdfFontName="DejaVuSans-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[Museum ID]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="30">
+            <rectangle>
+                <reportElement x="0" y="0" width="802" height="30" backcolor="#F0F0F0" mode="Opaque"/>
+            </rectangle>
+            <textField>
+                <reportElement x="0" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="100" y="0" width="1" height="30"/>
+            </line>
+            <textField>
+                <reportElement x="101" y="0" width="150" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="251" y="0" width="1" height="30"/>
+            </line>
+            <textField>
+                <reportElement x="252" y="0" width="200" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="452" y="0" width="1" height="30"/>
+            </line>
+            <textField>
+                <reportElement x="453" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{started}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="553" y="0" width="1" height="30"/>
+            </line>
+            <textField>
+                <reportElement x="554" y="0" width="100" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{ended}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="654" y="0" width="1" height="30"/>
+            </line>
+            <textField>
+                <reportElement x="655" y="0" width="147" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{museumId}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <pageFooter>
+        <band height="30">
+            <textField>
+                <reportElement x="0" y="10" width="802" height="20"/>
+                <textElement textAlignment="Right">
+                    <font fontName="DejaVu Sans" pdfFontName="DejaVuSans.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Report generated on: " + $P{CurrentDate}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+</jasperReport>
