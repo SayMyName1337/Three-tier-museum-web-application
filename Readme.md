@@ -43,7 +43,7 @@ This project is a three-tier client/server application designed to enhance the m
    ```
 4. After this step, run the script to create tables ["create_museums_db.sql"](https://github.com/SayMyName1337/Three-tier-museum-web-application/blob/master/DB/create_museums_db.sql) in the manager, and then run the script ["fill_tables_db.sql"](https://github.com/SayMyName1337/Three-tier-museum-web-application/blob/master/DB/fill_tables_db.sql) to fill them with test data. As a result, we get the following model:
    
-   ![db-model](https://private-user-images.githubusercontent.com/113287758/353525422-cbeb60cb-2ca9-4481-89ac-2808b9875aab.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjIzNTQ0MjMsIm5iZiI6MTcyMjM1NDEyMywicGF0aCI6Ii8xMTMyODc3NTgvMzUzNTI1NDIyLWNiZWI2MGNiLTJjYTktNDQ4MS04OWFjLTI4MDhiOTg3NWFhYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzMwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDczMFQxNTQyMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjM1MWYyN2M3MzQ2ZTE0YzZhMWRmNTc3NmRmZDE4ZWRmYzMzYmU1YWFmNDQ0MWNlNzcxZjA1OGUxY2ZkN2FjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.VN-B9_uY4nlHMoVLTtbkvQuEgHtcqpFHLFzixRmg79s)
+   ![db-model](https://github.com/user-attachments/assets/1ef1cd44-c171-41c2-b817-be76df180213)
 
 5. After completing the above steps, go to the project folder
    ```bash
